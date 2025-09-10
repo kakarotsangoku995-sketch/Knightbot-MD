@@ -14,3 +14,11 @@ const settings = {
 };
 
 module.exports = settings;
+# Create a new user
+sudo adduser newusername,  
+
+# Add the user to the sudo group (Debian/Ubuntu)
+sudo usermod -aG sudo newusername,  
+
+# On CentOS/RHEL use:
+sudo usermod -aG wheel newusername,
